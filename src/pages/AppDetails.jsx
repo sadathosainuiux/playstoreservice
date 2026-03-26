@@ -5,6 +5,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { toast } from 'react-toastify';
 import Loader from '../components/Loader';
 import appsData from '../data/appsData';
+import appError from '../assets/App-Error.png';
 import './AppDetails.css';
 
 const COLORS = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#00C896'];
@@ -54,7 +55,7 @@ const AppDetails = () => {
     return (
       <div className="app-not-found">
         <div className="container">
-          <img src="/assets/App-Error.png" alt="App not found" className="not-found-img" />
+          <img src={appError} alt="App not found" className="not-found-img" />
           <h2>Oops! App Not Found</h2>
           <p>The app you are looking for does not exist or may have been removed.</p>
           <Link to="/apps" className="btn btn-back-apps">Browse Apps</Link>

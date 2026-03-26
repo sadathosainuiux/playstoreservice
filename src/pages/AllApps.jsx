@@ -3,6 +3,7 @@ import { FaSearch } from 'react-icons/fa';
 import AppCard from '../components/AppCard';
 import Loader from '../components/Loader';
 import appsData from '../data/appsData';
+import appError from '../assets/App-Error.png';
 import './AllApps.css';
 
 const AllApps = () => {
@@ -94,7 +95,7 @@ const AllApps = () => {
           </div>
         ) : (
           <div className="no-apps-found">
-            <img src="/assets/App-Error.png" alt="No apps found" className="no-apps-img" />
+            <img src={appError} alt="No apps found" className="no-apps-img" />
             <h3>No App Found</h3>
             <p>Try searching with a different keyword</p>
           </div>
