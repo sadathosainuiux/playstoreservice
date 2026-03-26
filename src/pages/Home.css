@@ -1,0 +1,280 @@
+/* ===== Banner ===== */
+.banner {
+  background: white;
+  color: black;
+  padding: 60px 0 0px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 200, 150, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.banner-highlight {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.banner-text {
+  font-size: 1.05rem;
+  color: rgba(56, 56, 56, 0.75);
+  max-width: 70%;
+  margin: 0 auto 28px;
+  line-height: 1.7;
+}
+
+.banner-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.btn-appstore {
+  background: white;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-appstore:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-playstore {
+  background: var(--gradient);
+  color: rgb(255, 255, 255);
+  border: 1px solid var(--primary);
+}
+
+.btn-playstore:hover {
+  background: var(--gradient);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(77, 0, 200, 0.35);
+}
+
+.banner-image-wrap {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.banner-image {
+  width: 100%;
+  border-radius: 20px;
+  /* animation: float 3s ease-in-out infinite; */
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* ===== Stats ===== */
+.stats-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.stats-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.stats-section {
+  position: relative;
+  z-index: 2;
+  background: var(--gradient);
+  padding: 80px 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+
+.stat-info h3 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: -2px;
+}
+
+.stat-info p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+/* ===== Top Apps ===== */
+.top-apps-section {
+  padding: 60px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-gray);
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.show-all-wrap {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.btn-show-all {
+  background: var(--gradient);
+  color: white;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+.btn-show-all:hover {
+  background: var(--gradient);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(77, 0, 200, 0.35);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .apps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner{
+    padding: 20px 0 0px;
+  }
+
+  .banner-image-wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+  .banner-heading {
+    font-size: 2.4rem;
+  }
+
+  .banner-text {
+    font-size: 0.70rem;
+  }
+
+  .stats-section {
+    padding: 30px 0;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    padding: 40px 0 24px;
+  }
+
+  .banner-heading {
+    font-size: 1.75rem;
+  }
+
+  .banner-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 240px;
+  }
+
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
