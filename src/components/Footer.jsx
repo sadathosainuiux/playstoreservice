@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaGithub, FaTwitter, FaLinkedin, FaHeart } from 'react-icons/fa';
 import './Footer.css';
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <Link to="/" className="footer-logo">
-              <img src="/assets/logo.png" alt="Hero IO" />
+              <img src={logo} alt="Hero IO" />
               <span>Hero IO</span>
             </Link>
             <p className="footer-tagline">

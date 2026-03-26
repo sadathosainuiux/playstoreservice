@@ -1,13 +1,14 @@
 import { NavLink, Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import './Header.css';
+import logo from "../assets/logo.png";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container header-inner">
         <Link to="/" className="header-logo">
-          <img src="/assets/logo.png" alt="Hero IO Logo" />
+          <img src={logo} alt="Hero IO Logo" />
           <span>Hero IO</span>
         </Link>
 

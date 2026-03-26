@@ -4,6 +4,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import Loader from '../components/Loader';
 import './Installation.css';
+import appError from "../assets/App-Error.png";
 
 const Installation = () => {
   const [loading, setLoading] = useState(true);
@@ -61,7 +62,7 @@ const Installation = () => {
           </div>
         ) : (
           <div className="no-installed">
-            <img src="/assets/App-Error.png" alt="No installed apps" className="no-installed-img" />
+            <img src={appError} alt="No installed apps" className="no-installed-img" />
             <h3>OPPS!! APP NOT FOUND</h3>
             <p>The App you are requesting is not found on our system.  please try another apps</p>
             <Link to="/apps" className="btn btn-browse">Browse Apps</Link>

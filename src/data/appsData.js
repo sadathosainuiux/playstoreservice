@@ -1,7 +1,13 @@
+import app1 from "../assets/demo-app (1).webp";
+import app2 from "../assets/demo-app (2).webp";
+import app3 from "../assets/demo-app (3).webp";
+import app4 from "../assets/demo-app (4).webp";
+import app5 from "../assets/demo-app (5).webp";
+import app6 from "../assets/demo-app (6).webp";
 const appsData = [
   {
     id: 1,
-    image: "/assets/demo-app (1).webp",
+    image: app1,
     title: "Spotify - Music & Podcasts",
     companyName: "Spotify AB",
     description: "Spotify is a digital music service that gives you access to millions of songs. With Spotify, you can listen to music for free, or upgrade to Spotify Premium for an ad-free experience with better sound quality and the ability to download music for offline listening. Discover new music, create playlists, and share your favorite tracks with friends. Spotify also offers podcasts, audiobooks, and curated playlists tailored to your listening habits.",
@@ -19,7 +25,7 @@ const appsData = [
   },
   {
     id: 2,
-    image: "/assets/demo-app (2).webp",
+    image: app2,
     title: "WhatsApp Messenger",
     companyName: "Meta Platforms",
     description: "WhatsApp Messenger is a FREE messaging app available for smartphones. WhatsApp uses your phone's Internet connection to let you message and call friends and family. Switch from SMS to WhatsApp to send and receive messages, calls, photos, videos, documents, and Voice Messages. WhatsApp supports end-to-end encryption so your conversations remain private and secure.",
@@ -37,7 +43,7 @@ const appsData = [
   },
   {
     id: 3,
-    image: "/assets/demo-app (3).webp",
+    image: app3,
     title: "Instagram",
     companyName: "Meta Platforms",
     description: "Instagram is a photo and video sharing social networking service. It allows users to upload photos and videos, apply filters and effects, share them on their profile or via Stories and Reels, and interact with other users through likes, comments, and direct messages. Instagram also features a powerful Explore page to discover new content and creators.",
@@ -55,7 +61,7 @@ const appsData = [
   },
   {
     id: 4,
-    image: "/assets/demo-app (4).webp",
+    image: app4,
     title: "Notion - Notes & Projects",
     companyName: "Notion Labs Inc",
     description: "Notion is an all-in-one workspace for your notes, tasks, wikis, and databases. It combines note-taking, task management, and project planning into one powerful tool. Whether you are organizing personal goals, collaborating with a team, or building a knowledge base, Notion provides flexible building blocks to customize your workflow exactly the way you want.",
@@ -73,7 +79,7 @@ const appsData = [
   },
   {
     id: 5,
-    image: "/assets/demo-app (5).webp",
+    image: app5,
     title: "Slack - Business Messaging",
     companyName: "Salesforce Inc",
     description: "Slack brings team communication and collaboration into one place so you can get more work done. It replaces email inside your company with a messaging platform that organizes conversations into channels. Share files, integrate with tools you already use, and search through everything with powerful built-in search. Slack connects teams with the information they need.",
@@ -91,7 +97,7 @@ const appsData = [
   },
   {
     id: 6,
-    image: "/assets/demo-app (6).webp",
+    image: app6,
     title: "Figma - Design Tool",
     companyName: "Figma Inc",
     description: "Figma is a collaborative interface design tool that enables teams to design, prototype, and gather feedback all in one place. With real-time collaboration, auto-layout, and a powerful component system, Figma streamlines the entire design process. Whether you are a solo designer or part of a large team, Figma helps you create beautiful, functional designs faster.",
@@ -109,7 +115,7 @@ const appsData = [
   },
   {
     id: 7,
-    image: "/assets/demo-app (1).webp",
+    image: app1,
     title: "YouTube Music",
     companyName: "Google LLC",
     description: "YouTube Music is a music streaming service developed by YouTube. It provides a tailored interface for the service oriented towards music streaming, allowing users to browse through songs and music videos on YouTube based on genres, playlists, and recommendations. It offers both a free ad-supported version and a premium subscription with offline playback and background listening.",
@@ -127,7 +133,7 @@ const appsData = [
   },
   {
     id: 8,
-    image: "/assets/demo-app (2).webp",
+    image: app2,
     title: "Telegram Messenger",
     companyName: "Telegram FZ-LLC",
     description: "Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed. It offers fast, reliable messaging with end-to-end encryption for secret chats, self-destructing messages, large group support up to 200,000 members, channels for broadcasting to unlimited audiences, and powerful file sharing capabilities with no size limits.",
@@ -145,7 +151,7 @@ const appsData = [
   },
   {
     id: 9,
-    image: "/assets/demo-app (3).webp",
+    image: app3,
     title: "TikTok - Videos & Trends",
     companyName: "ByteDance Ltd",
     description: "TikTok is the destination for short-form mobile videos. Its mission is to inspire creativity and bring joy. TikTok enables everyone to be a creator, and encourages users to share their passion and creative expression through their videos. The platform is built to help imaginations thrive with music, stickers, filters, and special effects.",
@@ -163,7 +169,7 @@ const appsData = [
   },
   {
     id: 10,
-    image: "/assets/demo-app (4).webp",
+    image: app4,
     title: "VS Code Editor",
     companyName: "Microsoft Corp",
     description: "Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes. VS Code offers intelligent code completion, debugging, Git integration, and terminal support all in one elegant package.",
@@ -181,7 +187,7 @@ const appsData = [
   },
   {
     id: 11,
-    image: "/assets/demo-app (5).webp",
+    image: app5,
     title: "Discord - Chat & Calls",
     companyName: "Discord Inc",
     description: "Discord is a VoIP and instant messaging social platform. Users have the ability to communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called servers. Discord is popular among gaming communities but has expanded to education, business, and social communities worldwide.",
@@ -199,7 +205,7 @@ const appsData = [
   },
   {
     id: 12,
-    image: "/assets/demo-app (6).webp",
+    image: app6,
     title: "Canva - Design Anything",
     companyName: "Canva Pty Ltd",
     description: "Canva is a graphic design platform that is used to create social media graphics, presentations, posters, documents, and other visual content. It provides drag-and-drop tools, professional templates, and an extensive library of images, illustrations, and fonts. Canva makes it easy for anyone to create beautiful designs without needing professional design skills.",
@@ -217,7 +223,7 @@ const appsData = [
   },
   {
     id: 13,
-    image: "/assets/demo-app (1).webp",
+    image: app1,
     title: "Zoom Cloud Meetings",
     companyName: "Zoom Video Communications",
     description: "Zoom is the leader in modern enterprise video communications with a reliable and easy cloud platform for video and audio conferencing, chat, and webinars. Features include HD video and audio, cross-platform messaging, file sharing, screen sharing, recording, virtual backgrounds, and breakout rooms for effective collaboration.",
@@ -235,7 +241,7 @@ const appsData = [
   },
   {
     id: 14,
-    image: "/assets/demo-app (3).webp",
+    image: app3,
     title: "Trello - Project Manager",
     companyName: "Atlassian",
     description: "Trello is the visual tool that empowers your team to manage any type of project, workflow, or task tracking. Add files, checklists, or even automation: customize it all for how your team works best. Just sign up, create a board, and you are off! Trello uses boards, lists, and cards to help you organize and prioritize your projects in a fun and flexible way.",
@@ -253,7 +259,7 @@ const appsData = [
   },
   {
     id: 15,
-    image: "/assets/demo-app (5).webp",
+    image: app5,
     title: "Netflix - Stream Movies",
     companyName: "Netflix Inc",
     description: "Netflix is the world's leading subscription streaming service offering a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices. You can watch as much as you want, whenever you want without a single commercial. There is always something new to discover and new TV shows and movies are added every week.",

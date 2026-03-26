@@ -4,6 +4,7 @@ import { FaStar, FaDownload, FaApple, FaGooglePlay } from 'react-icons/fa';
 import AppCard from '../components/AppCard';
 import Loader from '../components/Loader';
 import appsData from '../data/appsData';
+import heroImg from '../assets/hero.png';
 import './Home.css';
 
 const Home = () => {
@@ -31,7 +32,7 @@ const Home = () => {
           </p>
           <div className="banner-buttons">
             <a
-              href="https://www.apple.com/app-store/"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-appstore"
@@ -40,7 +41,7 @@ const Home = () => {
               App Store
             </a>
             <a
-              href="https://play.google.com/store"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-playstore"
@@ -50,7 +51,7 @@ const Home = () => {
             </a>
           </div>
           <div className="banner-image-wrap">
-            <img src="./assets/hero.png" alt="Hero Apps" className="banner-image" />
+            <img src={heroImg} alt="Hero Apps" className="banner-image" />
           </div>
         </div>
       </section>
