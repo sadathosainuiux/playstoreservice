@@ -1,0 +1,126 @@
+.installation-page {
+  padding: 40px 0 60px;
+}
+
+.installation-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.installed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.installed-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.installed-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.installed-card-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.installed-card-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  object-fit: contain;
+  background: var(--bg);
+  padding: 6px;
+}
+
+.installed-card-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 2px;
+}
+
+.installed-card-text p {
+  font-size: 0.83rem;
+  color: var(--text-light);
+}
+
+.uninstall-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: #fee2e2;
+  color: #ef4444;
+  transition: var(--transition);
+}
+
+.uninstall-btn:hover {
+  background: #ef4444;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.no-installed {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-installed-img {
+  width: 250px;
+  margin: 0 auto 20px;
+}
+
+.no-installed h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.no-installed p {
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.btn-browse {
+  background: var(--gradient);
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.btn-browse:hover {
+  background: var(--gradient);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .installed-card {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .installed-card-info {
+    flex-direction: column;
+  }
+}

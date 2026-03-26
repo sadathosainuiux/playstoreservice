@@ -1,0 +1,251 @@
+.app-details-page {
+  padding: 40px 0 60px;
+}
+
+.app-info-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 36px;
+  box-shadow: var(--shadow);
+  margin-bottom: 32px;
+}
+
+.app-info-image {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.app-info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.app-info-content {
+  flex: 1;
+}
+
+.app-info-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.app-info-company {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+}
+
+.app-info-stats {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.info-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-stat-icon {
+  font-size: 1.3rem;
+}
+
+.rating-icon {
+  color: #f59e0b;
+}
+
+.download-icon {
+  color: var(--primary);
+}
+
+.review-icon {
+  color: var(--accent);
+}
+
+.info-stat div {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-stat strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.info-stat span {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.install-btn {
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--accent);
+  color: white;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.install-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 200, 150, 0.35);
+}
+
+.install-btn.installed {
+  background: var(--text-light);
+  cursor: not-allowed;
+}
+
+.app-chart-section {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  margin-bottom: 32px;
+}
+
+.chart-title,
+.description-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+}
+
+.app-description-section {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.description-text {
+  font-size: 0.95rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.description-meta {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-label {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.app-not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found-img {
+  width: 200px;
+  margin: 0 auto 24px;
+}
+
+.app-not-found h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.app-not-found p {
+  color: var(--text-gray);
+  margin-bottom: 24px;
+}
+
+.btn-back-apps {
+  background: var(--accent);
+  color: white;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.btn-back-apps:hover {
+  background: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .app-info-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .app-info-stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-info-title {
+    font-size: 1.3rem;
+  }
+
+  .app-chart-section,
+  .app-description-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-info-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .app-info-stats {
+    gap: 16px;
+  }
+
+  .description-meta {
+    gap: 20px;
+  }
+}
