@@ -50,7 +50,7 @@ const Home = () => {
             </a>
           </div>
           <div className="banner-image-wrap">
-            <img src="/assets/hero.png" alt="Hero Apps" className="banner-image" />
+            <img src="./assets/hero.png" alt="Hero Apps" className="banner-image" />
           </div>
         </div>
       </section>
