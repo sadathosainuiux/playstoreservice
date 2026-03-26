@@ -1,0 +1,90 @@
+/* ===== Global Reset & Design System ===== */
+:root {
+  --primary: #1B1F6A;
+  --primary-light: #3B3FA0;
+  --accent: #00C896;
+  --accent-hover: #00a87d;
+  --bg: #F4F6FC;
+  --bg-white: #ffffff;
+  --text-dark: #1a1a2e;
+  --text-gray: #6b7280;
+  --text-light: #9ca3af;
+  --border: #e5e7eb;
+  --shadow: 0 2px 12px rgba(27, 31, 106, 0.08);
+  --shadow-lg: 0 8px 32px rgba(27, 31, 106, 0.12);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --gradient: linear-gradient(135deg, #1B1F6A 0%, #3B3FA0 50%, #6366f1 100%);
+  --gradient-accent: linear-gradient(135deg, #00C896 0%, #00a87d 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font);
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: var(--font);
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===== Toast Override ===== */
+.Toastify__toast {
+  font-family: var(--font) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 3px;
+}
