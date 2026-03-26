@@ -16,8 +16,7 @@
   --radius-sm: 8px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --gradient: linear-gradient(135deg, #1B1F6A 0%, #3B3FA0 50%, #6366f1 100%);
-  --gradient-accent: linear-gradient(135deg, #00C896 0%, #00a87d 100%);
+  --gradient: linear-gradient(125deg, #632EE3 5.68%, #9F62F2 88.38%);
 }
 
 * {
