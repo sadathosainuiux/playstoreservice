@@ -1,0 +1,104 @@
+.app-card {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.app-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-card-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.app-card:hover .app-card-img {
+  transform: scale(1.08);
+}
+
+.app-card-info {
+  padding: 14px 16px 18px;
+}
+
+.app-card-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 3px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.app-card-company {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.app-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.app-card-rating,
+.app-card-downloads {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-gray);
+}
+
+.star-icon {
+  color: #f59e0b;
+  font-size: 0.75rem;
+}
+
+.download-icon {
+  color: var(--primary-light);
+  font-size: 0.7rem;
+}
+
+@media (max-width: 480px) {
+  .app-card-img-wrap {
+    padding: 14px;
+  }
+
+  .app-card-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .app-card-info {
+    padding: 10px 12px 14px;
+  }
+
+  .app-card-title {
+    font-size: 0.82rem;
+  }
+}
